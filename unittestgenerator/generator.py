@@ -11,7 +11,7 @@ def get_yaml_files(path):
 
 # Get test dir for template file
 def get_test_dir_for(templatefile):
-    testpath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(templatefile))), 'tests')
+    testpath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(templatefile))), 'testsdemo')
     return testpath
 
 # If there's yaml file, create test directory
