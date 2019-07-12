@@ -1,0 +1,59 @@
+suite: test kafka-chart/charts/cp-kafka/templates/nodeport-service.yaml
+templates:
+  - nodeport-service.yaml
+tests:
+  - it: should pass
+    release:
+      name: demo-release
+    asserts:
+      - equal: 
+          path: apiVersion
+          value: [NeedYourInput]
+      - equal: 
+          path: kind
+          value: [NeedYourInput]
+      - equal: 
+          path: metadata.name
+          value: [NeedYourInput]
+      - equal: 
+          path: metadata.labels.app
+          value: [NeedYourInput]
+      - equal: 
+          path: metadata.labels.chart
+          value: [NeedYourInput]
+      - equal: 
+          path: metadata.labels.release
+          value: [NeedYourInput]
+      - equal: 
+          path: metadata.labels.heritage
+          value: [NeedYourInput]
+      - equal: 
+          path: metadata.labels.pod
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.type
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.ports.name
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.ports.port
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.ports.targetPort
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.ports.nodePort
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.ports.protocol
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.selector.app
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.selector.release
+          value: [NeedYourInput]
+      - equal: 
+          path: spec.selector.statefulset.kubernetes.io/pod-name
+          value: [NeedYourInput]
